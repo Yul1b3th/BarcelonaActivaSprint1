@@ -1,0 +1,123 @@
+/* ********** Custom Properties ********** */
+:root {
+  --height-text: 1.2rem;
+}
+
+/* ********** Reset ********** */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  background-color: #fff;
+  /* display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh; */
+}
+
+/* ********** Utilities ********** */
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+  background-color: #000;
+  padding: 1rem;
+}
+
+/* ********** Site Styles ********** */
+.header {
+}
+
+.header .article1 {
+  display: grid;
+  grid-template-columns: 14% 1fr 14%;
+  background-color: #2d4059;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.header .article1 > div {
+  background-color: #ea5455;
+  height: var(--height-text);
+}
+
+.header .article1 .center {
+  background-color: #ea5455;
+  margin: 0 1rem;
+}
+
+.header .article2 {
+  background-color: #f07b3f;
+  padding: 1rem;
+}
+
+.header .article2 .principal {
+  background-color: #fed460;
+  height: var(--height-text);
+}
+
+.main {
+  margin: 1rem 0;
+}
+
+.main .container {
+  display: grid;
+  grid-template-columns: 59% 39%;
+  justify-content: space-between;
+}
+
+.main .article1 {
+  display: grid;
+  grid-template-columns: 48.5% 48.5%;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #4e4e6a;
+  row-gap: 1rem;
+}
+
+.main .article1 .left div:first-child,
+.main .article1 .right div:first-child {
+  margin-bottom: 1rem;
+}
+
+.main .article1 .left .text,
+.main .article1 .right .text {
+  height: var(--height-text);
+  background-color: #1f6cb0;
+}
+
+.main .article1 .principal {
+  grid-column: span 2;
+  height: var(--height-text);
+  background-color: #70a3c4;
+}
+
+.main .article2 {
+  background-color: #f73f52;
+  padding: 1rem;
+}
+.main .article2 .text {
+  height: var(--height-text);
+  background-color: #feea85;
+}
+
+.main .article2 div:first-child {
+  margin-bottom: 1rem;
+}
+
+.footer .text {
+  height: var(--height-text);
+  background-color: #e6af2e;
+}
